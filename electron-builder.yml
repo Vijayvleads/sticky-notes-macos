@@ -1,7 +1,6 @@
 appId: com.vijayvleads.sticky-notes-macos
-productName: Sticky Notes macOS
+productName: Sticky Notes
 copyright: Copyright © 2025 ${author}
-
 directories:
   output: release
   
@@ -22,7 +21,6 @@ files:
   - '!**/SCCS'
   - '!**/__pycache__'
   - '!**/node_modules/{.bin,@electron,@types,babel*,@babel,webpack*,typescript}'
-
 mac:
   category: public.app-category.productivity
   icon: build/icon.icns
@@ -33,9 +31,8 @@ mac:
         - arm64
   entitlementsInherit: build/entitlements.mas.plist
   gatekeeperAssess: false
-  hardenedRuntime: true
+  hardenedRuntime: false
   darkModeSupport: true
-
 dmg:
   icon: build/icon.icns
   iconSize: 100
