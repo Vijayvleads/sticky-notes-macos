@@ -22,5 +22,8 @@ export default defineConfig({
     alias: {
       '@': resolve(__dirname, 'src/renderer')
     }
+  },
+  define: {
+    VITE_DEV: JSON.stringify(process.env.NODE_ENV === 'development')
   }
 })
